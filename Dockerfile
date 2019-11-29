@@ -1,7 +1,7 @@
 FROM nginx:1.16.1
 LABEL maintainer="kalaksi@users.noreply.github.com"
 
-ARG RIOTWEB_VERSION="v1.3.6"
+ARG RIOTWEB_VERSION="v1.5.5"
 
 # Using a random UID/GID in range 65536-200000 instead of the default system UID
 # which has a greater possibility for collisions with the host and other containers.
