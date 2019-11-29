@@ -1,4 +1,4 @@
-FROM nginx:stable
+FROM nginx:1.16.1
 LABEL maintainer="kalaksi@users.noreply.github.com"
 
 ARG RIOTWEB_VERSION="v1.3.6"
