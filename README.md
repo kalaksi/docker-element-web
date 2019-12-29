@@ -1,6 +1,6 @@
 
 ## Repositories
-- [Docker Hub repository](https://registry.hub.docker.com/u/kalaksi/riot-web/)
+- [Docker Hub repository](https://hub.docker.com/r/kalaksi/riot-web/)
 - [GitHub repository](https://github.com/kalaksi/docker-riot-web)
 
 ## What is this container for?
