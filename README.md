@@ -1,7 +1,7 @@
 
 ## Repositories
-- [Docker Hub repository](https://hub.docker.com/r/kalaksi/riot-web/)
-- [GitHub repository](https://github.com/kalaksi/docker-riot-web)
+- [Docker Hub repository](https://hub.docker.com/r/kalaksi/element-web/) (**Previsouly riot-web, please change to the new naming.**)
+- [GitHub repository](https://github.com/kalaksi/docker-element-web)
 
 ## What is this container for?
 This container runs Nginx as a non-root user serving Riot web-UI.
@@ -9,7 +9,7 @@ This container runs Nginx as a non-root user serving Riot web-UI.
 ## Why use this container?
 **Simply put, this container has been written with simplicity and security in mind.**
 
-Surprisingly, _many_ community containers run unnecessarily with root privileges by default and don't provide help for dropping unneeded CAPabilities either.
+Many community containers run unnecessarily with root privileges by default and don't provide help for dropping unneeded CAPabilities either.
 On top of that, overly complex shell scripts, monolithic designs and unofficial base images make it harder to verify the source among other issues.
 
 To remedy the situation, these images have been written with security and simplicity in mind.
@@ -35,7 +35,7 @@ See the ```Tags``` tab on Docker Hub for specifics. Basically you have:
 
 ### Configuration
 You'll need to provide the configuration for the container at ```/opt/riot-web/config.json``` (as shown in ```docker-compose.yml```).  
-Sample configuration files can be found in riot-web root directory or in the [official repository](https://github.com/vector-im/riot-web/blob/v1.0.1/config.sample.json).
+Sample configuration files can be found in riot-web root directory or in the [official repository](https://github.com/vector-im/element-web/blob/v1.0.1/config.sample.json).
 
 ## Development
 

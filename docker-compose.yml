@@ -1,7 +1,7 @@
 version: '2'
 services:
-  riot-web:
-    image: kalaksi/riot-web
+  element-web:
+    image: kalaksi/element-web
     restart: unless-stopped
     cap_drop:
       - ALL
@@ -11,9 +11,9 @@ services:
       - SETUID
       - SETGID
     volumes:
-      - riotweb_config:/opt/riot-web/config.json:ro
+      - elementweb_config:/opt/element-web/config.json:ro
     ports:
       - 80:8080/tcp
 
 volumes:
-  riotweb_config: {}
+  elementweb_config: {}
