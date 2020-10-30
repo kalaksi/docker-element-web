@@ -1,6 +1,6 @@
 
 ## Repositories
-- [Docker Hub repository](https://hub.docker.com/r/kalaksi/element-web/) (**Previsouly riot-web, please change to the new naming.**)
+- [Docker Hub repository](https://hub.docker.com/r/kalaksi/element-web/)
 - [GitHub repository](https://github.com/kalaksi/docker-element-web)
 
 ## What is this container for?
