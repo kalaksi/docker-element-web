@@ -20,11 +20,11 @@ RUN touch /var/run/nginx.pid && \
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
       ca-certificates \
       wget && \
-    wget "https://github.com/vector-im/element-web/releases/download/${ELEMENTWEB_VERSION}/riot-${ELEMENTWEB_VERSION}.tar.gz" -O "/opt/riot-${ELEMENTWEB_VERSION}.tar.gz" && \
-    tar -xf /opt/riot-${ELEMENTWEB_VERSION}.tar.gz -C /opt && \
-    chown -R ${ELEMENTWEB_UID}:${ELEMENTWEB_GID} /opt/riot-${ELEMENTWEB_VERSION} && \
-    ln -s /opt/riot-${ELEMENTWEB_VERSION} /opt/riot-web && \
-    rm /opt/riot-${ELEMENTWEB_VERSION}.tar.gz && \
+    wget "https://github.com/vector-im/element-web/releases/download/${ELEMENTWEB_VERSION}/element-${ELEMENTWEB_VERSION}.tar.gz" -O "/opt/element-${ELEMENTWEB_VERSION}.tar.gz" && \
+    tar -xf /opt/element-${ELEMENTWEB_VERSION}.tar.gz -C /opt && \
+    chown -R ${ELEMENTWEB_UID}:${ELEMENTWEB_GID} /opt/element-${ELEMENTWEB_VERSION} && \
+    ln -s /opt/element-${ELEMENTWEB_VERSION} /opt/element-web && \
+    rm /opt/element-${ELEMENTWEB_VERSION}.tar.gz && \
     DEBIAN_FRONTEND=noninteractive apt-get autoremove --purge -y \
       ca-certificates \
       wget && \
