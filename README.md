@@ -34,17 +34,17 @@ See the ```Tags``` tab on Docker Hub for specifics. Basically you have:
 - Minor versioned tags (follow Semantic Versioning), e.g. ```1.1``` which would follow branch ```1.1.x``` on GitHub.
 
 ### Configuration
-You'll need to provide the configuration for the container at ```/opt/riot-web/config.json``` (as shown in ```docker-compose.yml```).  
-Sample configuration files can be found in riot-web root directory or in the [official repository](https://github.com/vector-im/element-web/blob/v1.0.1/config.sample.json).
+You'll need to provide the configuration for the container at ```/opt/element-web/config.json``` (as shown in ```docker-compose.yml```).  
+Sample configuration files can be found in element-web root directory or in the [official repository](https://github.com/vector-im/element-web/blob/v1.0.1/config.sample.json).
 
 ## Development
 
 ### Contributing
-See the repository on <https://github.com/kalaksi/docker-riot-web>.
+See the repository on <https://github.com/kalaksi/docker-element-web>.
 All kinds of contributions are welcome!
 
 ## License
-Copyright (c) 2018 kalaksi@users.noreply.github.com. See [LICENSE](https://github.com/kalaksi/docker-riot-web/blob/master/LICENSE) for license information.  
+Copyright (c) 2018 kalaksi@users.noreply.github.com. See [LICENSE](https://github.com/kalaksi/docker-element-web/blob/master/LICENSE) for license information.  
 
 As with all Docker images, the built image likely also contains other software which may be under other licenses (such as software from the base distribution, along with any direct or indirect dependencies of the primary software being contained).  
   
