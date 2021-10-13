@@ -2,6 +2,8 @@ version: '2'
 services:
   element-web:
     image: kalaksi/element-web
+    # You can also use GitLab as an alternative to Docker Hub:
+    # image: registry.gitlab.com/kalaksi-containers/element-web
     restart: unless-stopped
     cap_drop:
       - ALL

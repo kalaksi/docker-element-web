@@ -1,6 +1,7 @@
 
 ## Repositories
-- [Docker Hub repository](https://hub.docker.com/r/kalaksi/element-web/)
+- [GitLab repository](https://gitlab.com/kalaksi-containers/element-web/) (image: `registry.gitlab.com/kalaksi-containers/element-web`)
+- [Docker Hub repository](https://hub.docker.com/r/kalaksi/element-web/) (image: `docker.io/kalaksi/element-web`)
 - [GitHub repository](https://github.com/kalaksi/docker-element-web)
 
 ## What is this container for?
@@ -14,16 +15,17 @@ On top of that, overly complex shell scripts, monolithic designs and unofficial 
 
 To remedy the situation, these images have been written with security and simplicity in mind.
 
-|Requirement                   |Status|Details|
-|------------------------------|:----:|-------|
-|Don't run container as root   |✅    | Never run as root unless necessary. |
-|Official base image           |✅    | |
-|Drop extra CAPabilities       |✅    | See ```docker-compose.yml``` |
-|No default passwords          |✅    | No static default passwords. That would make the container insecure by default.|
-|Support secrets-files         |✅    | Support providing e.g. passwords via files instead of environment variables.|
-|Handle signals properly       |✅    | |
-|Simple Dockerfile             |✅    | No overextending the container's responsibilities. And keep everything in the Dockerfile if reasonable. |
-|Versioned tags                |✅    | Offer versioned tags for stability.|
+|Requirement                |Status|Details|
+|---------------------------|:----:|-------|
+|Don't run as root          |✅    | Never run as root unless necessary. |
+|Transparent build process  |✅    | For verifying that the container matches the code. See GitLab CI. |
+|Official base image        |✅    | |
+|Drop extra CAPabilities    |✅    | See ```docker-compose.yml``` |
+|No default passwords       |✅    | No static default passwords. That would make the container insecure by default.|
+|Support secrets-files      |✅    | Support providing e.g. passwords via files instead of environment variables.|
+|Handle signals properly    |✅    | |
+|Simple Dockerfile          |✅    | No overextending the container's responsibilities. And keep everything in the Dockerfile if reasonable. |
+|Versioned tags             |✅    | Offer versioned tags for stability.|
 
 ## Running this container
 See the example ```docker-compose.yml``` in the source repository.
