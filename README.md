@@ -5,7 +5,7 @@
 - [GitHub repository](https://github.com/kalaksi/docker-element-web)
 
 ## What is this container for?
-This container runs Nginx as a non-root user serving Riot web-UI.
+This container runs Nginx as a non-root user serving Element web-UI.
 
 ## Why use this container?
 **Simply put, this container has been written with simplicity and security in mind.**
