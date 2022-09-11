@@ -1,7 +1,7 @@
 # Copyright (c) 2018 kalaksi@users.noreply.github.com.
 # This work is licensed under the terms of the MIT license. For a copy, see <https://opensource.org/licenses/MIT>.
 
-FROM nginx:1.23.6
+FROM nginx:1.23.1
 LABEL maintainer="kalaksi@users.noreply.github.com"
 
 ARG ELEMENTWEB_VERSION="v1.11.4"
