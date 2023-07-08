@@ -1,10 +1,10 @@
 # Copyright (c) 2018 kalaksi@users.noreply.github.com.
 # This work is licensed under the terms of the MIT license. For a copy, see <https://opensource.org/licenses/MIT>.
 
-FROM nginx:1.23.4
+FROM nginx:1.25.1
 LABEL maintainer="kalaksi@users.noreply.github.com"
 
-ARG ELEMENTWEB_VERSION="v1.11.29"
+ARG ELEMENTWEB_VERSION="v1.11.35"
 
 # Using a random UID/GID in range 65536-200000 instead of the default system UID
 # which has a greater possibility for collisions with the host and other containers.
