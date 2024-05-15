@@ -1,10 +1,10 @@
 # Copyright (c) 2018 kalaksi@users.noreply.github.com.
 # This work is licensed under the terms of the MIT license. For a copy, see <https://opensource.org/licenses/MIT>.
 
-FROM nginx:1.25.4
+FROM nginx:1.25.5
 LABEL maintainer="kalaksi@users.noreply.github.com"
 
-ARG ELEMENTWEB_VERSION="v1.11.58"
+ARG ELEMENTWEB_VERSION="v1.11.66"
 
 # Using a random UID/GID in range 65536-200000 instead of the default system UID
 # which has a greater possibility for collisions with the host and other containers.
@@ -20,7 +20,7 @@ RUN touch /var/run/nginx.pid && \
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
       ca-certificates \
       wget && \
-    wget "https://github.com/vector-im/element-web/releases/download/${ELEMENTWEB_VERSION}/element-${ELEMENTWEB_VERSION}.tar.gz" -O "/opt/element-${ELEMENTWEB_VERSION}.tar.gz" && \
+    wget "https://github.com/element-hq/element-web/releases/download/${ELEMENTWEB_VERSION}/element-${ELEMENTWEB_VERSION}.tar.gz" -O "/opt/element-${ELEMENTWEB_VERSION}.tar.gz" && \
     tar -xf /opt/element-${ELEMENTWEB_VERSION}.tar.gz -C /opt && \
     chown -R ${ELEMENTWEB_UID}:${ELEMENTWEB_GID} /opt/element-${ELEMENTWEB_VERSION} && \
     ln -s /opt/element-${ELEMENTWEB_VERSION} /opt/element-web && \
